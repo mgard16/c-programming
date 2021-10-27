@@ -1,0 +1,90 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+
+int main()
+{
+    //declare ur variables
+    int number1, number2, number3, number4, number5, number6, number7, number8, numberMin, numberMax;
+    //ask the user questions AND DO MIN MAX
+    cout << "What is your first number?" << endl;
+    cin >> number1;
+    cout << "What is your second number?" << endl;
+    cin >> number2;
+    if (number1<number2)
+    {
+        numberMin=number1;
+        numberMax=number2;
+    }
+    else
+    {
+        numberMin=number2;
+        numberMax=number1;
+    }
+    cout << "What is your third number?" << endl;
+    cin >> number3;
+    if (number3<numberMin)
+    {
+        numberMin=number3;
+    }
+    else if (number3>numberMax)
+    {
+        numberMax=number3;
+    }
+    cout << "What is your fourth number?" << endl;
+    cin >> number4;
+    if (number4<numberMin)
+    {
+        numberMin=number4;
+    }
+    else if (number4>numberMax)
+    {
+        numberMax=number4;
+    }
+    cout << "What is your fifth number?" << endl;
+    cin >> number5;
+    if (number5<numberMin)
+    {
+        numberMin=number5;
+    }
+    else if(number5>numberMax)
+    {
+        numberMax=number5;
+    }
+    cout << "What is your sixth number?" << endl;
+    cin >> number6;
+    if (number6<numberMin)
+    {
+        numberMin=number6;
+    }
+    else if (number6>numberMax)
+    {
+        numberMax=number6;
+    }
+    cout << "What is your seventh number?" << endl;
+    cin >> number7;
+    if (number7<numberMin)
+    {
+        numberMin=number7;
+    }
+    else if (number7>numberMax)
+    {
+        numberMax=number7;
+    }
+    cout << "What is your eighth number?" << endl;
+    cin >> number8;
+    if (number8<numberMin)
+    {
+        numberMin=number8;
+    }
+    else if (number8>numberMax)
+    {
+        numberMax=number8;
+    }
+    system("cls");
+    //give user min and max
+    cout << "The max is " << numberMax << " and the min is " << numberMin << "." << endl;
+    return 0;
+}
